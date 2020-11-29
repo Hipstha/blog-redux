@@ -1,0 +1,64 @@
+.btn-modal {
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  color: white;
+  background-color: coral;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  z-index: 2;
+  border: unset;
+  span {
+    font-size: 2rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal {
+  .modal-header {
+    border-bottom: 0;
+    display: block;
+    color: black;
+    text-align: center;
+    h5 {
+      font-weight: 600;
+      font-size: 23px;
+    }
+  }
+  form {
+    .modal-body {
+      .form-group {
+        margin-bottom: 2rem;
+        input,
+        textarea,
+        select {
+          width: 100%;
+          border-left: 0;
+          border-top: 0;
+          border-right: 0;
+          border-bottom: 1px solid #949494;
+          background-color: unset;
+        }
+        textarea {
+        }
+        select {
+          option {
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border-top: 0;
+    .btn-canel {
+      color: black;
+    }
+    .btn-submit {
+      color: white;
+      background-color: #3f51b5;
+    }
+  }
+}

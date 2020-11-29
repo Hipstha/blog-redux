@@ -1,0 +1,21 @@
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  .post {
+    width: 50%;
+  }
+  .noData {
+    width: 100%;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 895px) {
+  .posts-container {
+    .post {
+      width: 100%;
+    }
+  }
+}

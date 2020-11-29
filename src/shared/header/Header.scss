@@ -1,0 +1,35 @@
+header {
+  .header-container{
+    .first-title {
+      margin-top: 45px;
+      text-align: center;
+      color: coral;
+    }
+    h2 {
+      font-size: 16px;
+      letter-spacing: 1px;
+      .bigger {
+        font-size: 35px;
+      }
+    }
+  }
+  .main-title {
+    text-align: center;
+    h2 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 820px) {
+  header {
+    .header-container {
+      .main-title {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

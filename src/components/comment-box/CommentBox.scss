@@ -1,0 +1,31 @@
+.comment-box {
+  background-color: white;
+  border-radius: 5px 5px;
+  margin: 2rem 0rem;
+  .comment {
+    display: flex;
+    padding: 1rem;
+    .user-img {
+      span {
+        font-size: 3rem;
+        margin-right: 1rem;
+      }
+    }
+    .comment-body {
+      .comment-user {
+        h3 {
+          margin: 0;
+          margin-bottom: 1rem;
+          font-weight: 600;
+        }
+      }
+      .comment-text {
+        p {
+          margin: 0;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
