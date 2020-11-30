@@ -3,14 +3,11 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getPostsAction } from '../../redux/actions/PostActions';
 
-
-
 import CategorySelector from '../../components/category-selector/CategorySelector';
 import Post from '../../components/post/Post';
 import ModalPost from '../../components/modal-post/ModalPost';
 import Loading from '../../components/loading/Loading';
 import ServerError from '../../components/server-error/ServerError';
-
 
 import './Posts.scss';
 
@@ -33,7 +30,6 @@ const Posts = () => {
   if (error) {
     return (
       <>
-        <CategorySelector />
         <ServerError />
       </>
     )

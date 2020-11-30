@@ -18,58 +18,6 @@
         {
           "user": "Joe Doew",
           "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "hola que tal"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "hola que tal x2"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "asdfasdf"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "fafafa"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "HOla que tal esta es una prueba"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": ""
-        },
-        {
-          "user": "Joe Doew",
-          "comment": ""
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "sdfaf"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "Esta es una prueba"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "fasdfasdfasdf"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "afafafaf"
         }
       ]
     },
@@ -78,7 +26,7 @@
       "title": "At the beach in winter",
       "summary": "Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella. Lorem ipsum dolor sit amet enatis sociosqu egestas sociis nibh. Ornare hendrerit fringilla interdum ridiculus consequat euismod condimentum magna. Tortor sollicitudin pharetra mattis fames fusce placerat. Aenean dignissim consequat posuere quam laoreet in luctus mus, orci mattis sapien ullamcorper ad dictum massa quisque parturient, lacus inceptos et ut nulla condimentum eget.",
       "img": "https://images.unsplash.com/photo-1602911504703-ff49a51d07b0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
-      "category": "Travel",
+      "category": "Work",
       "comments": [
         {
           "user": "Joe Doew",
@@ -94,7 +42,11 @@
         },
         {
           "user": "Joe Doew",
-          "comment": "fasdfasdfas"
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          "user": "Joe Doew",
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         }
       ]
     },
@@ -103,7 +55,7 @@
       "title": "The Edge of Nothing Lake",
       "summary": "Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella. Lorem ipsum dolor sit amet enatis sociosqu egestas sociis nibh. Ornare hendrerit fringilla interdum ridiculus consequat euismod condimentum magna. Tortor sollicitudin pharetra mattis fames fusce placerat. Aenean dignissim consequat posuere quam laoreet in luctus mus, orci mattis sapien ullamcorper ad dictum massa quisque parturient, lacus inceptos et ut nulla condimentum eget.",
       "img": "https://images.unsplash.com/photo-1604882356682-8ec3d3037c82?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
-      "category": "Travel",
+      "category": "Food",
       "comments": [
         {
           "user": "Joe Doew",
@@ -111,11 +63,7 @@
         },
         {
           "user": "Joe Doew",
-          "comment": "dddddd"
-        },
-        {
-          "user": "Joe Doew",
-          "comment": "aaaaa"
+          "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         }
       ]
     },
@@ -124,8 +72,10 @@
       "title": "Five Hundred Twenty",
       "summary": "Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella. Lorem ipsum dolor sit amet enatis sociosqu egestas sociis nibh. Ornare hendrerit fringilla interdum ridiculus consequat euismod condimentum magna. Tortor sollicitudin pharetra mattis fames fusce placerat. Aenean dignissim consequat posuere quam laoreet in luctus mus, orci mattis sapien ullamcorper ad dictum massa quisque parturient, lacus inceptos et ut nulla condimentum eget.",
       "img": "https://images.unsplash.com/photo-1602815403836-3dfe6062212c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
-      "category": "Travel",
-      "comments": []
+      "category": "Business",
+      "comments": [
+
+      ]
     }
   ]
 }

@@ -34,26 +34,14 @@ const PostDetail = () => {
   };
 
   // comment form
-  const [comment, setComment] = useState({
-    user: "Joe Doew",
-    comment: ""
-  });
-
-  const getFormData = (e) => {
-    setComment({
-      ...comment,
-      [e.target.name]: e.target.value
-    });
-  };
+  const [user, setUser] = useState('Joe Doew');
+  const [comment, setComment] = useState('');
 
   const submitedForm = e => {
     e.preventDefault();
-    comments.push(comment);
+    comments.push({user, comment});
     dispatch(setCommentAction(post));
-    setComment({
-      user: "Joe Doew",
-      comment: ""
-    });
+    setComment('');
     document.getElementById('comment-input').value = "";
   };
 
@@ -116,7 +104,8 @@ const PostDetail = () => {
                           id="comment-input" 
                           rows="0"
                           placeholder="send a comment"
-                          onChange={getFormData}
+                          value={comment}
+                          onChange={(e) => setComment(e.target.value) }
                 ></textarea>
               </div>
               <div className="form-col">

@@ -1,13 +1,31 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { deletePostAction, updatePostActionModal } from '../../redux/actions/PostActions';
 
 import './Post.scss';
 
 const Post = (props) => {
+
+  const dispatch = useDispatch();
+
   const { id, title, summary, img, category, comments } = props.postData;
   const summaryShort = summary.substring(0, 150) + '...';
+
+  const deletPost = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dispatch( deletePostAction(id) );
+  }
+
+  const updatePost = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dispatch( updatePostActionModal(props.postData) )
+  }
 
   return (
     <>
@@ -46,10 +64,10 @@ const Post = (props) => {
 
               <div className="post-option">
                 <p className="pruebaClick">
-                  <span className="material-icons">edit</span>
+                  <span onClick={updatePost} className="material-icons">edit</span>
                 </p>
                 <p>
-                  <span className="material-icons">delete</span>
+                  <span onClick={deletPost} className="material-icons">delete</span>
                 </p>
               </div>
 

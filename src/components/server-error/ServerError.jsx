@@ -5,9 +5,12 @@ const ServerError = () => {
   return (
     <div className="server-error-container">
       <Alert variant="danger">
-        <Alert.Heading>Error 505! :( </Alert.Heading>
+        <Alert.Heading>Error: 503 Service Unavailable! :( </Alert.Heading>
         <p>
-          We are having problems, sorry
+          Right now the server is off, try it again later.
+        </p>
+        <p>
+          If the problem is not solved, call to the site administrator
         </p>
       </Alert>
     </div>
