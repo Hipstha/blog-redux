@@ -5,22 +5,28 @@ import Header from './shared/header/Header';
 import Posts from './pages/posts/Posts';
 import PostDetail from './pages/post-detail/PostDetail';
 
+// redux
+import { Provider } from 'react-redux';
+import store from './redux/store/Store';
+
 function App() {
   return (
     <>
-      <div className="app">
-        <Header />
+      <Router> 
+        <Provider store={store}>
+          <div className="app">
+            <Header />
 
-        <Router>
-          <Switch>
-            <Route exact path='/'>
-              <Redirect to='/posts' />
-            </Route>
-            <Route path='/posts' component={Posts} />
-            <Route path='/post/:postId' component={PostDetail} />
-          </Switch>
-        </Router>
-      </div>
+            <Switch>
+              <Route exact path='/'>
+                <Redirect to='/posts' />
+              </Route>
+              <Route path='/posts' component={Posts} />
+              <Route path='/post/:postId' component={PostDetail} />
+            </Switch>
+          </div>
+        </Provider>
+      </Router>
     </>
   );
 }

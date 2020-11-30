@@ -5,27 +5,29 @@ import Swal from 'sweetalert2'
 
 import './Post.scss';
 
-const Post = () => {
-  const id = 1;
+const Post = (props) => {
+  const { id, title, summary, img, category, comments } = props.postData;
+  const summaryShort = summary.substring(0, 150) + '...';
+
   return (
     <>
-      <Link to={`/post/${id}`}>
+      <Link to={`/post/${ id }`}>
         <article className="post-container">
 
           <div className="post-image">
-            <img src="https://source.unsplash.com/random" alt="postImage"/>
+            <img src={ img } alt="postImage"/>
           </div>
 
           <div className="post-body">
             <div className="post-title">
-              <h2>Título del post</h2>
+              <h2>{ title }</h2>
             </div>
 
             <div className="onHover-animation"></div>
 
             <div className="post-comments-home">
               <p>
-                <span>3 </span>
+                <span>{ comments.length } </span>
                 <span>Comments </span>
                 <span className="material-icons">forum</span>
               </p>
@@ -33,16 +35,13 @@ const Post = () => {
 
             <div className="post-description">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Ab iste id deserunt quod cum eligendi 
-                reprehenderit omnis doloribus error ad laudantium provident illo quasi, 
-                molestiae ea quibusdam quos quam consequatur!
+                { summaryShort }
               </p>
             </div>
 
             <div className="post-footer">
               <div className="post-category">
-                <p>Travel</p>
+                <p>{ category }</p>
               </div>
 
               <div className="post-option">
