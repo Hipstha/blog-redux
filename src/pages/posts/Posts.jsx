@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getPostsAction } from '../../redux/actions/PostActions';
+import { getPostsAction, setCategoryAction } from '../../redux/actions/PostActions';
 
 import CategorySelector from '../../components/category-selector/CategorySelector';
 import Post from '../../components/post/Post';
@@ -21,6 +21,9 @@ const Posts = () => {
     }
     getPosts();
   }, []);
+
+  // get category
+  const category = useSelector(state => state.posts.category);
 
   // get state
   const posts = useSelector(state => state.posts.posts);
@@ -42,15 +45,21 @@ const Posts = () => {
           loading ? <Loading /> : null
         }
         <section className="posts-container">
-          {
-            posts.length === 0 ? 'No posts :(' : (
-              posts.map( post => (
+          {posts.map((post) => {
+            if (post.category === category) {
+              return (
                 <div key={post.id} className="post">
                   <Post postData={post} />
                 </div>
-              ))
-            )
-          }
+              );
+            } else if (category === "All") {
+              return (
+                <div key={post.id} className="post">
+                  <Post postData={post} />
+                </div>
+              );
+            }
+          })}
         </section>
       </>
     )

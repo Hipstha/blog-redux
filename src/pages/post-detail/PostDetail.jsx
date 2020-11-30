@@ -28,7 +28,7 @@ const PostDetail = () => {
   const post = useSelector(state => state.posts.postDetail);
   const error = useSelector(state => state.posts.error);
   const loading = useSelector(state => state.posts.loading);
-  const { id, title, summary, img, comments, category } = post;
+  const { title, summary, img, comments } = post;
   const backImg = {
     backgroundImage: `url('${img}')`,
   };
@@ -36,7 +36,6 @@ const PostDetail = () => {
   // comment form
   const [user, setUser] = useState('Joe Doew');
   const [comment, setComment] = useState('');
-
   const submitedForm = e => {
     e.preventDefault();
     comments.push({user, comment});
@@ -51,13 +50,13 @@ const PostDetail = () => {
     )
   } else {
     return (
-      <section>
+      <section className="postDetail">
   
         {
           loading ? <Loading /> : null
         }
 
-        <article className="post-header hola" style={backImg}>
+        <article className="post-header animate__animated animate__fadeIn" style={backImg}>
           <div className="post-header-container">
             <div className="return-options">
               <Link to="/posts">

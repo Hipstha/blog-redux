@@ -1,9 +1,8 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { deletePostAction, updatePostActionModal } from '../../redux/actions/PostActions';
 
 import './Post.scss';
@@ -30,7 +29,7 @@ const Post = (props) => {
   return (
     <>
       <Link to={`/post/${ id }`}>
-        <article className="post-container">
+        <article className="post-container animate__animated animate__fadeIn">
 
           <div className="post-image">
             <img src={ img } alt="postImage"/>

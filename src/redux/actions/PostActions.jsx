@@ -20,7 +20,8 @@ import {
   UPDATE_POST,
   UPDATE_POST_SUCCESS,
   UPDATE_POST_ERROR,
-  HIDE_MODAL_UPDATE
+  HIDE_MODAL_UPDATE,
+  SET_CATEGORY
 } from '../types';
 
 import Swal from 'sweetalert2';
@@ -253,3 +254,13 @@ const updatePostError = () => ({
   type: UPDATE_POST_ERROR,
   payload: true
 });
+
+// Function to set a category
+export function setCategoryAction(category) {
+  return (dispatch) => {
+    dispatch({
+      type: SET_CATEGORY,
+      payload: category
+    });
+  }
+}

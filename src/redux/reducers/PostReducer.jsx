@@ -20,7 +20,8 @@ import {
   UPDATE_POST,
   UPDATE_POST_SUCCESS,
   UPDATE_POST_ERROR,
-  HIDE_MODAL_UPDATE
+  HIDE_MODAL_UPDATE,
+  SET_CATEGORY
 } from '../types';
 
 const postDetailEmpty = {
@@ -40,7 +41,8 @@ const initialState = {
   loading: false,
   postDelete: null,
   postUpdate: null,
-  isPostToUpdate: false
+  isPostToUpdate: false,
+  category: 'All'
 }
 
 export default (state = initialState, action) => {
@@ -173,6 +175,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         error: action.payload
+      }
+    case SET_CATEGORY: 
+      return {
+        ...state,
+        category: action.payload
       }
     default: 
       return state;

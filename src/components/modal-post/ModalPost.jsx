@@ -82,9 +82,6 @@ const ModalPost = () => {
   // Form state to update
   useEffect(() => {
     if(isPostToUpdate) {
-      // form state to update
-      // console.log(isPostToUpdate);
-      // console.log(postUpdate);
       setForm(postUpdate);
       handleShow();
     }
@@ -92,7 +89,6 @@ const ModalPost = () => {
 
   const updateForm = (e) => {
     e.preventDefault();
-    // console.log(form);
     dispatch( updatePostAction(form) );
     handleClose();
     setForm({

@@ -3,7 +3,7 @@ import './ServerError.scss';
 
 const ServerError = () => {
   return (
-    <div className="server-error-container">
+    <div className="server-error-container animate__animated animate__fadeIn">
       <Alert variant="danger">
         <Alert.Heading>Error: 503 Service Unavailable! :( </Alert.Heading>
         <p>

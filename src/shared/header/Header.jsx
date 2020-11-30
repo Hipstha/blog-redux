@@ -4,7 +4,7 @@ import './Header.scss';
 const Header = () => {
   return (
     <header>
-      <div className="header-container">
+      <div className="header-container animate__animated animate__fadeIn">
         <div className="first-title">
           <h2>
             <span className="bigger">[ </span> Making your Life Easier
