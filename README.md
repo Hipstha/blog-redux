@@ -6,6 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+For emulate a database, you can use json-server
+`npm install -g json-server`
+
+and inside of the project, run the server with the file "db.json".
+`json-server db.json --port 4000`
+
 ### `npm start`
 
 Runs the app in the development mode.\
